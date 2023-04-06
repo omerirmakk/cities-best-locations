@@ -1,14 +1,16 @@
 import Layout from "@/components/Layout";
 import MainCard from "@/components/MainCard";
 import Country from "../../data.json";
+import { useEffect } from "react";
+
 const Turkey = () => {
   return (
     <Layout>
-      {Country.turkey.map((turkey) => (
+      {Country.turkey.map((t) => (
         <MainCard
-          source={turkey.countryPhoto}
-          mainTitle={turkey.countryTitle}
-          mainP={turkey.countryDesc}
+          source={t.countryPhoto}
+          mainTitle={t.countryTitle}
+          mainP={t.countryDesc}
         ></MainCard>
       ))}
     </Layout>

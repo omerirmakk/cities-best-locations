@@ -26,6 +26,7 @@ export default function Home() {
         }
 
         countryName.innerHTML = this.getAttribute("title");
+
         if (window.innerWidth > 700) {
           setInterval(() => {
             window.location.reload();
